@@ -8,24 +8,24 @@ Just copy the .css files to the public/stylesheets diretory and everything under
 the img directory to the public/images directory.  Be sure to include the css files
 in your application layout file.
 
-github/bluetrip $ cp css/*.css ~/ProjectApp/public/stylesheets/
-github/bluetrip $ cp -R img/* ~/ProjectApp/public/images/
+    github/bluetrip $ cp css/*.css ~/ProjectApp/public/stylesheets/
+    github/bluetrip $ cp -R img/* ~/ProjectApp/public/images/
 
 
-app/views/layouts/application.html.erb
+    app/views/layouts/application.html.erb
 
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Project Title</title>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <title>Project Title</title>
 
-  <%= stylesheet_link_tag 'screen', :media => 'screen, projection' %>
-  <%= stylesheet_link_tag 'print', :media => 'print' %>
-  <!--[if IE]>
-      <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection">
-  <![endif]-->
-  <%= stylesheet_link_tag 'style', :media => 'screen, projection' %>
+        <%= stylesheet_link_tag 'screen', :media => 'screen, projection' %>
+        <%= stylesheet_link_tag 'print', :media => 'print' %>
+        <!--[if IE]>
+              <link rel="stylesheet" href="/stylesheets/ie.css" type="text/css" media="screen, projection">
+        <![endif]-->
+        <%= stylesheet_link_tag 'style', :media => 'screen, projection' %>
 
-</head>
+    </head>
 
 
 A CSS Framework that fuses the best of Blueprint and Tripoli, among others.
